@@ -33,7 +33,5 @@
   "dependencies": {
     "emailjs-com": "^2.4.1",
     "express": "^4.17.1"
-  },
-  "heroku-run-start-script": false,
-  "heroku-run-build-script": true
+  }
 }
