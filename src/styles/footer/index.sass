@@ -1,0 +1,42 @@
+@import "../config"
+    
+.footer
+    background-color: white
+    .footer-content
+        max-width: $max-content-width
+        margin: 0 auto
+        padding: $default-gap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .items
+            .element
+                display: inline-flex
+                align-items: center
+                padding: 0 $default-gap
+                &:first-of-type
+                    padding-left: 0px
+                .element_icon
+                    display: inline-block
+                    width: 20px
+                    height: 20px
+                    margin-right: 10px
+                    background-position: center center
+                    background-size: contain
+                .element_content
+                    color: $primary-color
+                    font-family: "Roboto"
+        .socials
+            .social-item
+                display: inline-block
+                margin-right: 10px
+                &:last-of-type
+                    margin-right: 0
+                .social-link
+                    display: block   
+                    width: 20px
+                    height: 20px
+                    background-position: center center
+                    background-size: contain
+
+@import "./media"

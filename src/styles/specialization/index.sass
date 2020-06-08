@@ -1,0 +1,23 @@
+@import "../config"
+
+.specialization
+    background-color: $primary-color
+    display: flex
+    justify-content: center
+    .specialization-content
+        max-width: $max-content-width
+        padding: 0 $default-gap
+        .specialization-element
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+            .specialization-header
+                color: $accent-color
+                font-weight: bold
+                font-size: 25px
+                margin-bottom: 15px
+            .specialization-text
+                color: white
+                line-height: 1.7
+                margin-bottom: 50px
+            &:last-of-type
+                .specialization-text
+                    margin-bottom: 60px

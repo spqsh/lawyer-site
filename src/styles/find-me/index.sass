@@ -1,0 +1,40 @@
+@import "../config"
+
+.find-me
+    .find-me-content
+        max-width: $max-content-width
+        margin: 0 auto
+        padding: 0 $default-gap
+        .find-me-info
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding-bottom: 60px
+            .find-me-list
+                flex-grow: 0
+                flex-shrink: 0
+                padding-right: $default-gap
+                .find-me-item
+                    display: block
+                    line-height: 20px
+                    padding: 3px 0
+                    .item-icon
+                        display: inline-block
+                        width: 20px
+                        height: 20px
+                        margin-right: 10px
+                        background-position: center center
+                        background-size: contain
+                    .item-header
+                        font-family: Arial, Helvetica, sans-serif
+                        font-weight: bold
+                        margin-right: 5px
+                        display: inline-block
+                    .item-text
+                        font-family: Arial, Helvetica, sans-serif
+                        display: inline-block
+            .find-me-map
+                max-width: 100%
+                min-height: 200px
+
+@import "./media"

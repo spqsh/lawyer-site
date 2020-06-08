@@ -1,0 +1,88 @@
+@import "./config"
+
+.section-header
+    font-size: 40px
+    font-family: "Montserrat"
+    text-transform: uppercase
+    text-align: center
+    line-height: 1.3
+    padding: 60px 0px
+    &::after
+        display: block
+        width: 70%
+        margin: 60px auto 0
+        border: 2px solid $accent-color
+        content: ""
+
+.section-header_dark
+    color: $secondary-color
+
+.section-header_light
+    color: white
+
+@media all and ( max-width: 600px )
+    .section-header
+        font-size: 30px
+
+.popups
+    .popup
+        position: fixed
+        text-align: center
+        bottom: -100px
+        right: $default-gap
+        z-index: 9999
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        padding: 30px 20px
+        border-radius: 20px
+        color: white
+        font-family: Arial, Helvetica, sans-serif
+        transition: .4s
+        box-shadow: 0px 10px 18px -4px rgba(0,0,0,0.75)
+    .popup.popup-loading
+        background-color: $secondary-color
+    .popup.popup-success
+        background-color: #79d70f
+    .popup.popup-error
+        background-color: $accent-color
+    .popup.show
+        bottom: $default-gap
+
+@media all and ( max-width: 400px )
+    .popups
+        .popup
+            right: $default-gap
+            left: $default-gap
+        .popup.show
+            bottom: $default-gap
+
+// Icons
+
+.icon-email
+    background-image: url("./../static/icons/email.png")
+.icon-phone
+    background-image: url("./../static/icons/phone.png")
+.icon-twitter
+    background-image: url("./../static/icons/twitter.png")
+.icon-vk
+    background-image: url("./../static/icons/vk.png")
+.icon-facebook
+    background-image: url("./../static/icons/facebook.png")
+
+.icon-email-dark
+    background-image: url("./../static/icons/mail-dark.png")
+.icon-phone-dark
+    background-image: url("./../static/icons/phone-dark.png")
+.icon-twitter-dark
+    background-image: url("./../static/icons/twitter-dark.png")
+.icon-vk-dark
+    background-image: url("./../static/icons/vk-dark.png")
+.icon-facebook-dark
+    background-image: url("./../static/icons/facebook-dark.png")
+.icon-pin-dark
+    background-image: url("./../static/icons/pin-dark.png")
+.icon-phone-dark
+    background-image: url("./../static/icons/phone-dark.png")
+.icon-fax-dark
+    background-image: url("./../static/icons/fax-dark.png")

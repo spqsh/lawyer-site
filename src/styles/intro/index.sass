@@ -1,0 +1,63 @@
+@import "../config"
+    
+.intro
+    height: 95vh
+    min-height: 400px
+    background: url("../static/images/intro.jpg") no-repeat top/cover
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 0
+        background-color: rgba(0,0,0, .35)
+    .intro-content
+        padding: $default-gap
+        z-index: 1
+        display: flex
+        align-items: center
+        flex-direction: column
+        max-width: $max-content-width
+        .motto
+            font-size: 40px
+            font-family: "Montserrat"
+            text-transform: uppercase
+            color: white
+            margin-bottom: 20px
+            text-align: center
+            line-height: 1.2
+            max-width: calc(100vw - #{$default-gap} * 2)
+            .accent-text
+                color: $accent-color
+        .buttons
+            .button
+                display: inline-block
+                text-align: center
+                padding: 20px
+                font-family: "Montserrat"
+                font-size: 15px
+                border: none
+                transition: all .4s
+                color: white
+                border: 2px solid
+                cursor: pointer
+            .contact-me
+                background-color: $primary-color
+                border-color: $primary-color
+                &:hover
+                    color: $accent-color
+            .more-information
+                border: 2px solid white
+                background-color: rgba(0, 0, 0, 0)
+                margin-left: 10px
+                &:hover
+                    background-color: white
+                    color: $primary-color
+
+@import "./media"

@@ -1,0 +1,47 @@
+@import "../config"
+    
+@media all and ( max-width: 900px )
+    .navigation-burger
+        display: inline-block
+    .navigation-container
+        position: relative
+        .navigation
+            .navigation-content
+                display: flex
+                position: relative
+                justify-content: flex-end
+                .navigation-list
+                    display: block
+                    position: absolute
+                    top: -500%
+                    z-index: -1
+                    .element
+                        background-color: $primary-color
+                        display: block
+                        text-align: center
+                        .link, .link.active
+                            color: white
+                        .link
+                            position: relative
+                            &::after
+                                content: ""
+                                position: absolute
+                                display: block
+                                height: 1px
+                                background-color: #fff
+                                top: 0
+                        .link.active
+                            &:hover
+                                color: $accent-color
+                .navigation-list.show
+                    top: 100%
+
+@media all and ( max-width: 500px )
+    #contacts
+        .contacts-content
+            .items
+                .element
+                    display: block
+                    &:last-of-type
+                        padding-left: 0
+                        margin-top: 10px

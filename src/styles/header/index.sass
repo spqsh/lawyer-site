@@ -1,0 +1,81 @@
+@import "../config"
+    
+header
+    z-index: 3
+    position: relative
+    .contacts
+        background-color: $primary-color
+        .contacts-content
+            max-width: $max-content-width
+            margin: 0 auto
+            padding: $default-gap
+            display: flex
+            align-items: center
+            justify-content: space-between
+            .items
+                .element
+                    display: inline-flex
+                    align-items: center
+                    padding: 0 $default-gap
+                    &:first-of-type
+                        padding-left: 0px
+                    .element_icon
+                        display: inline-block
+                        width: 20px
+                        height: 20px
+                        margin-right: 10px
+                        background-position: center center
+                        background-size: contain
+                    .element_content
+                        color: white
+                        font-family: "Roboto"
+            .socials
+                .social-item
+                    display: inline-block
+                    margin-right: 10px
+                    &:last-of-type
+                        margin-right: 0
+                    .social-link
+                        display: block   
+                        width: 20px
+                        height: 20px
+                        background-position: center center
+                        background-size: contain
+.navigation-container
+    background-color: $secondary-color
+    z-index: 2
+    .navigation
+        background-color: $secondary-color
+        top: 0
+        left: 0
+        right: 0
+        z-index: 3
+        .navigation-content
+            max-width: $max-content-width
+            margin: 0 auto
+            background-color: inherit
+            .navigation-list
+                width: 100%
+                list-style: none
+                display: flex
+                align-items: center
+                justify-content: center
+                transition: all .7s
+                .element
+                    display: inline-block
+                    .link
+                        display: block
+                        padding: $default-gap
+                        transition: color .3s
+                        text-transform: uppercase
+                        font-size: 17px
+                        font-family: "Roboto"
+                        cursor: pointer
+                        color: white
+                        &:hover
+                            color: $accent-color
+                    .link.active
+                        color: $accent-color
+
+@import "./burger-menu"
+@import "./media"

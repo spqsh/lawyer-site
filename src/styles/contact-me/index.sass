@@ -1,0 +1,42 @@
+@import "../config"
+    
+.contact-me
+    background-color: $primary-color
+    .contact-me-content
+        max-width: $max-content-width
+        margin: 0 auto
+        padding: 0 $default-gap 20px
+        .form
+            max-width: 80%
+            margin: 0 auto
+            display: flex
+            flex-direction: column
+            .label
+                display: block
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+                margin: 10px
+                color: white
+                .input
+                    box-sizing: border-box
+                    display: block
+                    width: 100%
+                    margin-top: 10px
+                    padding: 10px
+                .message
+                    resize: none
+                    height: 200px
+            .button
+                margin: 10px
+                padding: 20px
+                cursor: pointer
+                border: none
+                background-color: $primary-color
+                color: white
+                text-transform: uppercase
+                font-size: 15px
+                font-family: "Roboto"
+                transition: all .4s
+                &:hover
+                    background-color: $secondary-color
+
+@import "./media"
