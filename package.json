@@ -6,8 +6,9 @@
   "scripts": {
     "build": "webpack --mode production",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open",
-    "heroku-postbuild": "yarn build --mode production"
+    "server": "webpack-dev-server --open",
+    "start": "index.php",
+    "heroku-postbuild": "webpack --mode production"
   },
   "author": "",
   "license": "ISC",
@@ -31,5 +32,7 @@
   },
   "dependencies": {
     "emailjs-com": "^2.4.1"
-  }
+  },
+  "heroku-run-start-script": false,
+  "heroku-run-build-script": true
 }
