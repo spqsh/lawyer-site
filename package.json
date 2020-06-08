@@ -8,7 +8,7 @@
     "watch": "webpack --watch",
     "server": "webpack-dev-server --open",
     "start": "node server.js",
-    "heroku-postbuild": "yarn && webpack --mode production"
+    "heroku-postbuild": "yarn build"
   },
   "author": "",
   "license": "ISC",
