@@ -7,7 +7,7 @@
     "build": "webpack --mode production",
     "watch": "webpack --watch",
     "server": "webpack-dev-server --open",
-    "start": "index.php",
+    "start": "node server.js",
     "heroku-postbuild": "webpack --mode production"
   },
   "author": "",
